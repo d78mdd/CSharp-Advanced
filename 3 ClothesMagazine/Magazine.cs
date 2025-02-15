@@ -63,7 +63,7 @@ namespace ClothesMagazine
                 sb.AppendLine(cloth.ToString());
             }
 
-            return sb.ToString();
+            return sb.ToString().Trim();
         }
     }
 }

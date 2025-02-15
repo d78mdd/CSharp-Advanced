@@ -17,7 +17,8 @@ namespace VendingSystem
 
         public List<Drink> Drinks { get; set; }
 
-        public int GetCount() { return Drinks.Count; }
+        public int GetCount { get { return Drinks.Count; } }
+
 
         public void AddDrink(Drink drink)
         {

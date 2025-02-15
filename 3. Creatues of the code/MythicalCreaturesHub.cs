@@ -4,14 +4,13 @@ namespace CreaturesOfTheCode
 {
     public class MythicalCreaturesHub
     {
-
         public MythicalCreaturesHub(int capacity)
         {
             Capacity = capacity;
             Creatures = new List<Creature>();
         }
 
-        public List<Creature> Creatures;
+        public List<Creature> Creatures { get; set; }
 
         public int Capacity { get; set; }
 
@@ -79,7 +78,7 @@ namespace CreaturesOfTheCode
 
             sb.AppendLine("Mythical Creatures:".Trim());
 
-            foreach (Creature creature in Creatures)
+            foreach (Creature creature in Creatures.OrderBy(c => c.Name))
             {
                 sb.AppendLine($"{creature.Name} -> {creature.Kind}".Trim());
             }
