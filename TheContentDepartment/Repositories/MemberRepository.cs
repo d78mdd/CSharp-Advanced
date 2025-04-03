@@ -1,20 +1,27 @@
-﻿using TheContentDepartment.Repositories.Contracts;
+﻿using TheContentDepartment.Models.Contracts;
+using TheContentDepartment.Repositories.Contracts;
 
 namespace TheContentDepartment.Repositories;
 
-public class MemberRepository<ITeamMember> : IRepository<ITeamMember> where ITeamMember : class
+public class MemberRepository : IRepository<ITeamMember>
 {
-    public IReadOnlyCollection<ITeamMember> Models { get; }
+    private List<ITeamMember> models;
 
+    public IReadOnlyCollection<ITeamMember> Models => models.AsReadOnly();
+
+    public MemberRepository()
+    {
+        this.models = new List<ITeamMember>();
+    }
 
 
     public void Add(ITeamMember model)
     {
-        throw new NotImplementedException();
+        models.Add(model);
     }
 
-    public ITeamMember TakeOne(string modelName)
+    public ITeamMember? TakeOne(string modelName)
     {
-        throw new NotImplementedException();
+        return models.FirstOrDefault(member => member.Name == modelName);
     }
 }

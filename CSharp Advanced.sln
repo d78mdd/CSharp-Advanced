@@ -89,6 +89,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam preparation 3 part 1",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheContentDepartment", "TheContentDepartment\TheContentDepartment.csproj", "{7A561973-6FB8-40DE-BE19-337DC336F3C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecourceCloud", "RecourceCloud-Skeleton\RecourceCloud\RecourceCloud.csproj", "{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecourceCloud.Tests", "RecourceCloud-Skeleton\RecourceCloud.Tests\RecourceCloud.Tests.csproj", "{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +215,14 @@ Global
 		{7A561973-6FB8-40DE-BE19-337DC336F3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A561973-6FB8-40DE-BE19-337DC336F3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A561973-6FB8-40DE-BE19-337DC336F3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,5 +269,7 @@ Global
 		{BB2183D4-47F1-4C1E-935F-EC86D3F6B4F2} = {AA6E65C4-C12D-4C05-B87D-E3644568365D}
 		{62F08F8E-3AB4-441E-8E52-866A2933AD94} = {943AE22E-08E9-43AB-854A-F6E840D1565D}
 		{7A561973-6FB8-40DE-BE19-337DC336F3C8} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
+		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
+		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
 	EndGlobalSection
 EndGlobal

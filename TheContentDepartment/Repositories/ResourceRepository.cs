@@ -1,20 +1,32 @@
-﻿using TheContentDepartment.Repositories.Contracts;
+﻿using System.Reflection;
+using TheContentDepartment.Models;
+using TheContentDepartment.Models.Contracts;
+using TheContentDepartment.Repositories.Contracts;
 
 namespace TheContentDepartment.Repositories;
 
-public class ResourceRepository<IResource> : IRepository<IResource> where IResource : class
+public class ResourceRepository : IRepository<IResource>
 {
-    public IReadOnlyCollection<IResource> Models { get; }
+    private List<IResource> models;
+    
+    public IReadOnlyCollection<IResource> Models => models.AsReadOnly();
+
+
+    public ResourceRepository()
+    {
+        this.models = new List<IResource>();
+    }
+
 
 
 
     public void Add(IResource model)
     {
-        throw new NotImplementedException();
+        models.Add(model); ;
     }
 
     public IResource TakeOne(string modelName)
     {
-        throw new NotImplementedException();
+        return models.FirstOrDefault(resource => resource.Name == modelName);
     }
 }

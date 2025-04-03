@@ -8,6 +8,6 @@
 
         void Add(T model);
 
-        T TakeOne(string modelName);
+        T? TakeOne(string modelName);
     }
 }
