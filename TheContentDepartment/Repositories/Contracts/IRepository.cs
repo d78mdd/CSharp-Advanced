@@ -4,6 +4,8 @@
     {
         IReadOnlyCollection<T> Models { get; }
 
+
+
         void Add(T model);
 
         T TakeOne(string modelName);

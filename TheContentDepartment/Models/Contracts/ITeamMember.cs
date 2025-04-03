@@ -8,6 +8,8 @@
 
         IReadOnlyCollection<string> InProgress { get; }
 
+
+
         void WorkOnTask(string resourceName);
 
         void FinishTask(string resourceName);
