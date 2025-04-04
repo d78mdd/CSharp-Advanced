@@ -6,7 +6,9 @@
 
         double Budget { get; }
 
+
         IReadOnlyCollection<string> Contributors { get; }
+
 
 
         void Gain(double amount);

@@ -9,6 +9,6 @@
 
         bool RemoveModel(T model);
 
-        T FindByName(string name);
+        T? FindByName(string name);
     }
 }

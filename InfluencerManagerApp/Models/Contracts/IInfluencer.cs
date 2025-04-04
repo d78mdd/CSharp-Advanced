@@ -10,7 +10,10 @@
 
         double Income { get; }
 
+
         IReadOnlyCollection<string> Participations { get; }
+
+
 
 
         void EarnFee(double amount);
