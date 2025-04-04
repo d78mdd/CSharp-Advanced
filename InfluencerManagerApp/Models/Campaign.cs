@@ -7,7 +7,7 @@ public abstract class Campaign : ICampaign
 {
     public string Brand { get; }
 
-    public double Budget { get; protected set; } // correct?
+    public double Budget { get; private set; }
 
 
     private List<string> _contributors;
