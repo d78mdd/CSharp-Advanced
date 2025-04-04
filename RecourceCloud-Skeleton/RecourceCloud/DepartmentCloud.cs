@@ -15,20 +15,27 @@
 
         public IReadOnlyCollection<Resource> Resources => resources.AsReadOnly();
 
+
+
+
+        // done
         public string LogTask(string[] args)
         {
-            if(args.Length != 3)
+            // done
+            if (args.Length != 3)
             {
                 throw new ArgumentException("All arguments are required.");
             }
 
-            if(args.Any(a => a == null))
+            // done
+            if (args.Any(a => a == null))
             {
                 throw new ArgumentException("Arguments values cannot be null.");
             }
 
             Task task = new Task(int.Parse(args[0]), args[1], args[2]);
 
+            // done
             if(tasks.Any(t => t.ResourceName == task.ResourceName))
             {
                 return $"{task.ResourceName} is already logged.";
@@ -36,9 +43,15 @@
 
             tasks.Add(task);
 
+            //done
             return $"Task logged successfully.";
         }
 
+
+
+
+
+        // done
         public bool CreateResource()
         {
             var task = tasks.OrderBy(t => t.Priority).FirstOrDefault();
@@ -55,6 +68,7 @@
             return true;
         }
 
+        // done
         public Resource? TestResource(string name)
         {
             var resource = resources.FirstOrDefault(t => t.Name == name);

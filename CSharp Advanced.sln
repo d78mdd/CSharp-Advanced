@@ -85,13 +85,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberSecurityDS", "CyberSec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CyberSecurityDS with baserepository", "CyberSecurityDS with baserepository\CyberSecurityDS with baserepository.csproj", "{BB2183D4-47F1-4C1E-935F-EC86D3F6B4F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam preparation 3 part 1", "Exam preparation 3 part 1", "{62F08F8E-3AB4-441E-8E52-866A2933AD94}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam preparation 3 part 1 and part 2", "Exam preparation 3 part 1 and part 2", "{62F08F8E-3AB4-441E-8E52-866A2933AD94}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheContentDepartment", "TheContentDepartment\TheContentDepartment.csproj", "{7A561973-6FB8-40DE-BE19-337DC336F3C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecourceCloud", "RecourceCloud-Skeleton\RecourceCloud\RecourceCloud.csproj", "{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecourceCloud.Tests", "RecourceCloud-Skeleton\RecourceCloud.Tests\RecourceCloud.Tests.csproj", "{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam preparation 4", "Exam preparation 4", "{BD7D4C97-8CD0-4FC6-ABA1-158ED3638223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam", "Exam", "{ECE3A9BA-4B59-4B8C-9F99-8202FF5F9538}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfluencerManagerApp", "InfluencerManagerApp\InfluencerManagerApp.csproj", "{B6F8555E-0E47-467D-B720-D7B199D9A519}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -223,6 +229,10 @@ Global
 		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -271,5 +281,8 @@ Global
 		{7A561973-6FB8-40DE-BE19-337DC336F3C8} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
 		{B3B84F2C-F1B5-4C10-A8ED-57C711F0434C} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
 		{009C5D02-2A95-47FE-B9CF-A1096BC1AE0D} = {62F08F8E-3AB4-441E-8E52-866A2933AD94}
+		{BD7D4C97-8CD0-4FC6-ABA1-158ED3638223} = {943AE22E-08E9-43AB-854A-F6E840D1565D}
+		{ECE3A9BA-4B59-4B8C-9F99-8202FF5F9538} = {943AE22E-08E9-43AB-854A-F6E840D1565D}
+		{B6F8555E-0E47-467D-B720-D7B199D9A519} = {BD7D4C97-8CD0-4FC6-ABA1-158ED3638223}
 	EndGlobalSection
 EndGlobal
