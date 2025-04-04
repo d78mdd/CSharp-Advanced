@@ -38,7 +38,7 @@ public abstract class Campaign : ICampaign
 
     public void Gain(double amount)
     {
-        Budget += amount; // or _budget?
+        Budget += amount;
     }
 
 
