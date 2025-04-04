@@ -189,7 +189,7 @@ public class Controller : IController
         }
 
         foreach (var influencer in this.influencers.Models
-                     .Where(i => i.Participations.Contains(brand))) // correct ?
+                     .Where(i => i.Participations.Contains(brand)))
         {
             influencer.EarnFee(2000);
 
