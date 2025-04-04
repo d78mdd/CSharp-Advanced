@@ -99,6 +99,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exam", "Exam", "{ECE3A9BA-4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfluencerManagerApp", "InfluencerManagerApp\InfluencerManagerApp.csproj", "{B6F8555E-0E47-467D-B720-D7B199D9A519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMediaManager", "SocialMediaManager-Skeleton\SocialMediaManager\SocialMediaManager.csproj", "{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMediaManager.Tests", "SocialMediaManager-Skeleton\SocialMediaManager.Tests\SocialMediaManager.Tests.csproj", "{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -233,6 +237,14 @@ Global
 		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F8555E-0E47-467D-B720-D7B199D9A519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -284,5 +296,7 @@ Global
 		{BD7D4C97-8CD0-4FC6-ABA1-158ED3638223} = {943AE22E-08E9-43AB-854A-F6E840D1565D}
 		{ECE3A9BA-4B59-4B8C-9F99-8202FF5F9538} = {943AE22E-08E9-43AB-854A-F6E840D1565D}
 		{B6F8555E-0E47-467D-B720-D7B199D9A519} = {BD7D4C97-8CD0-4FC6-ABA1-158ED3638223}
+		{62F6794B-22B0-4EE0-B840-5E5D70D9E7B3} = {BD7D4C97-8CD0-4FC6-ABA1-158ED3638223}
+		{EF1B1B7D-444D-4ADF-B60C-029DBD9E5130} = {BD7D4C97-8CD0-4FC6-ABA1-158ED3638223}
 	EndGlobalSection
 EndGlobal

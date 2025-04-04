@@ -211,7 +211,7 @@ public class Controller : IController
         }
 
         bool hasParticipations = existingInfluencer.Participations.Count > 1;
-        // ? or  this.campaigns.Models.Where(c => c.Contributors.Contains(username))
+        this.campaigns.Models.Where(c => c.Contributors.Contains(username));
 
         if (hasParticipations)
         {
@@ -251,7 +251,8 @@ public class Controller : IController
             //foreach (string campaign in influencer.Participations
             //             .OrderBy(brand => brand))
             foreach (var campaign in this.campaigns.Models
-                         .Where(c => c.Contributors.Contains(influencer.Username)))
+                         .Where(c => c.Contributors.Contains(influencer.Username))
+                         .OrderBy(c => c.Brand))
             {
                 sb.Append("--");
                 sb.Append(campaign.ToString());
