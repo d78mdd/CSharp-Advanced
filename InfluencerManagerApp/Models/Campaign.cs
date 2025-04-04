@@ -45,6 +45,6 @@ public abstract class Campaign : ICampaign
     public void Engage(IInfluencer influencer)
     {
         _contributors.Add(influencer.Username);
-        Budget -= influencer.Income;  // influencer fees.  // correct?   // or _budget
+        Budget -= influencer.CalculateCampaignPrice();
     }
 }

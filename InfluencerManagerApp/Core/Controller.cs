@@ -188,9 +188,10 @@ public class Controller : IController
             return string.Format(OutputMessages.CampaignCannotBeClosed, brand);
         }
 
-        foreach (var influencer in this.influencers.Models.Where(i => i.Participations.Contains("brand"))) // correct ?
+        foreach (var influencer in this.influencers.Models
+                     .Where(i => i.Participations.Contains(brand))) // correct ?
         {
-            influencer.EarnFee(2000);  // or directly use Income property?
+            influencer.EarnFee(2000);
 
             influencer.EndParticipation(brand);
         }
