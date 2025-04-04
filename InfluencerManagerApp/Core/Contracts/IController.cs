@@ -8,7 +8,7 @@
 
         string AttractInfluencer(string brand, string username);
 
-        string FundCampaign(string brand, double amount);  // task description : •	amount – string ??
+        string FundCampaign(string brand, double amount);  // task description : amount – string - breaks 4 tests
 
         string CloseCampaign(string brand);
 

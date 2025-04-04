@@ -154,7 +154,7 @@ public class Controller : IController
 
 
 
-    public string FundCampaign(string brand, double amount)  // task description : •	amount – string
+    public string FundCampaign(string brand, double amount)  // task description : amount – string - breaks 4 tests
     {
         ICampaign? existingCampaign = this.campaigns.FindByName(brand);
         if (existingCampaign == null)
@@ -162,14 +162,14 @@ public class Controller : IController
             return string.Format(OutputMessages.InvalidCampaignToFund);
         }
 
-        if (amount < 0)  // need to parse string to double?
+        if (amount <= 0)
         {
             return string.Format(OutputMessages.NotPositiveFundingAmount);
         }
 
         existingCampaign.Gain(amount);
 
-        return string.Format(OutputMessages.CampaignFundedSuccessfully, brand, amount);
+        return string.Format(OutputMessages.CampaignFundedSuccessfully, brand, $"{amount:F0}");
     }
 
 
@@ -211,7 +211,7 @@ public class Controller : IController
             return string.Format(OutputMessages.InfluencerNotSigned, username);
         }
 
-        bool hasParticipations = existingInfluencer.Participations.Count > 1;
+        bool hasParticipations = existingInfluencer.Participations.Count > 0;
         this.campaigns.Models.Where(c => c.Contributors.Contains(username));
 
         if (hasParticipations)
