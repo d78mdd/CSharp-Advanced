@@ -56,7 +56,7 @@ public class Controller : IController
 
         members.Add(newMember);
 
-        return $"{memberName} has joined the team. Welcome!";
+        return string.Format(OutputMessages.MemberJoinedSuccessfully, memberName);
     }
 
 
