@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,13 +18,13 @@ namespace ShoeStore
 
         public int StorageCapacity { get; set; }
 
-        public List<Shoe> Shoes { get; set; }
+        public List<Shoe> Shoes { get; }
 
-        public int GetCount { get { return Shoes.Count; } }
+        public int Count { get { return Shoes.Count; } }
 
         public string AddShoe(Shoe shoe)
         {
-            if (Shoes.Count == StorageCapacity)
+            if (Count == StorageCapacity)
             {
                 return "No more space in the storage room.";
             }
@@ -37,14 +38,14 @@ namespace ShoeStore
 
         public int RemoveShoes(string material)
         {
-            int removedShoes = Shoes.RemoveAll(shoe => shoe.Material.ToLower() == material.ToLower());
+            int removedShoes = Shoes.RemoveAll(shoe => shoe.Material == material);
 
             return removedShoes;
         }
 
         public List<Shoe> GetShoesByType(string type)
         {
-            List<Shoe> shoes = Shoes.FindAll(shoe => shoe.Type.ToLower() == type.ToLower());
+            List<Shoe> shoes = Shoes.FindAll(shoe => shoe.Type.Equals(type, StringComparison.CurrentCultureIgnoreCase));
 
             return shoes;
         }
@@ -59,9 +60,9 @@ namespace ShoeStore
 
         public string StockList(double size, string type)
         {
-            List<Shoe> shoes = Shoes
-                .FindAll(shoe => shoe.Size == size)
-                .FindAll(shoe => shoe.Type.ToLower() == type.ToLower());
+            List<Shoe> shoes = 
+                GetShoesByType(type)
+                .FindAll(shoe => shoe.Size == size);
 
             if (shoes.Count == 0)
             {
@@ -78,7 +79,7 @@ namespace ShoeStore
                     sb.AppendLine(shoe.ToString());
                 }
 
-                return sb.ToString();
+                return sb.ToString().Trim();
             }
 
         }
