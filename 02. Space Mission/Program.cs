@@ -1,22 +1,22 @@
 ﻿
-int size = int.Parse(Console.ReadLine());
+int N = int.Parse(Console.ReadLine());
 
-char[][] grid = new char[size][];
+char[][] spaceField = new char[N][];
 
 // current coordinates
 int x = -1;
 int y = -1;
 
-for (int row = 0; row < size; row++)
+for (int row = 0; row < N; row++)
 {
-    string input = string.Join("", Console.ReadLine().Split(' ').Select(s => s[0]));
+    string input = string.Join("", Console.ReadLine().Split(' '));
 
-    grid[row] = new char[size];
-    for (int col = 0; col < size; col++)
+    spaceField[row] = new char[N];
+    for (int col = 0; col < N; col++)
     {
-        grid[row][col] = input[col];
+        spaceField[row][col] = input[col];
 
-        if (grid[row][col] == 'S') // Spaceship
+        if (spaceField[row][col] == 'S') // Spaceship
         {
             y = row;
             x = col;
@@ -31,7 +31,7 @@ bool outside = false;
 bool reached = false;
 
 
-grid[y][x] = '.';
+spaceField[y][x] = '.';
 
 for (; ; )
 {
@@ -57,7 +57,7 @@ for (; ; )
 
         case "down":
 
-            if (y == (size - 1))
+            if (y == (N - 1))
             {
                 outside = true;
             }
@@ -70,7 +70,7 @@ for (; ; )
 
         case "right":
 
-            if (x == (size - 1))
+            if (x == (N - 1))
             {
                 outside = true;
             }
@@ -99,7 +99,7 @@ for (; ; )
 
     if (outside) // lost in space
     {
-        grid[y][x] = 'S';
+        spaceField[y][x] = 'S';
         break;
     }
 
@@ -110,13 +110,13 @@ for (; ; )
     // check the new coordinates:
 
     // reach an empty sector
-    if (grid[newY][newX] == '.')
+    if (spaceField[newY][newX] == '.')
     {
         x = newX;
         y = newY;
     }
     // reach a refueling space station
-    else if (grid[newY][newX] == 'R')
+    else if (spaceField[newY][newX] == 'R')
     {
         x = newX;
         y = newY;
@@ -128,17 +128,17 @@ for (; ; )
         }
     }
     // reach a meteorite
-    else if (grid[newY][newX] == 'M')
+    else if (spaceField[newY][newX] == 'M')
     {
         x = newX;
         y = newY;
 
-        grid[y][x] = '.';
+        spaceField[y][x] = '.';
 
         resources -= 5;
     }
     // planet Erynor reached
-    else if (grid[newY][newX] == 'P')
+    else if (spaceField[newY][newX] == 'P')
     {
         x = newX;
         y = newY;
@@ -153,7 +153,7 @@ for (; ; )
 
     if (resources < 5)
     {
-        grid[y][x] = 'S';
+        spaceField[y][x] = 'S';
 
         break;
     }
@@ -181,7 +181,7 @@ else // resources < 0
 // There will always be enough commands to either succeed or fail the mission.
 
 // print the grid
-for (int row = 0; row < size; row++)
+for (int row = 0; row < N; row++)
 {
-    Console.WriteLine(string.Join(' ', grid[row]));
+    Console.WriteLine(string.Join(' ', spaceField[row]));
 }
