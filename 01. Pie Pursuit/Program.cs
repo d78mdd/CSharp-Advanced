@@ -31,8 +31,10 @@ for (; ; )
         {
             contestantCapacities.Enqueue(contestantCapacity);
         }
+        // else if (contestantCapacity < 0) contenstantCapacity = 0;  ?
     }
-    else
+    // pie's size exceeds the contestant's pie-eating capacity
+    else  // contestantCapacity < piePieces
     {
         piePieces -= contestantCapacity;
         contestantCapacity = 0;
@@ -56,7 +58,7 @@ for (; ; )
         }
         else
         {
-            piesPieces.Push(piePieces);
+            piesPieces.Push(piePieces); 
         }
 
         // remove the contestant - already done
@@ -71,10 +73,7 @@ if (piesPieces.Count < 1) // pies are over
         Console.WriteLine("We will have to wait for more pies to be baked!");
 
         Console.Write("Contestants left: ");
-        foreach (int c in contestantCapacities)
-        {
-            Console.Write(string.Join(", ", contestantCapacities));
-        }
+        Console.Write(string.Join(", ", contestantCapacities));
     }
     else // both contestants and pies are over
     {
@@ -92,15 +91,6 @@ else // there are pies left
         Console.WriteLine("Our contestants need to rest!");
 
         Console.Write("Pies left: ");
-        foreach (int c in piesPieces)
-        {
-            Console.Write(string.Join(", ", piesPieces));
-        }
+        Console.Write(string.Join(", ", piesPieces));
     }
 }
-
-
-
-
-
-
