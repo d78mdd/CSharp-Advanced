@@ -1,0 +1,72 @@
+﻿Alice is successfully added to the application.
+HRDepartment is not available.
+ITDepartment is successfully created.
+HRDepartment is successfully created.
+FinanceDepartment is successfully created.
+ITDepartment is already created.
+MarketingDepartment is not a valid department type.
+Alice is already added to the application.
+Bob is successfully added to the application.
+Pilot is not a valid employee type.
+Alice is already added to the application.
+Security ID 123 is already taken.
+David is successfully added to the application.
+Emma is successfully added to the application.
+Frank is successfully added to the application.
+Grace is successfully added to the application.
+Henry is successfully added to the application.
+Irene is successfully added to the application.
+Zoe is not added to the application.
+MarketingDepartment is not a valid department type.
+ITSpecialist cannot be added to FinanceDepartment.
+ITSpecialist cannot be added to HRDepartment.
+GeneralEmployee cannot be added to ITDepartment.
+GeneralEmployee is successfully assigned to HRDepartment.
+ITSpecialist is successfully assigned to ITDepartment.
+GeneralEmployee is successfully assigned to FinanceDepartment.
+GeneralEmployee is successfully assigned to HRDepartment.
+Charlie is not added to the application.
+ITSpecialist is successfully assigned to ITDepartment.
+ITSpecialist is successfully assigned to ITDepartment.
+ITSpecialist is successfully assigned to ITDepartment.
+Bob is already added to department.
+Irene is already added to department.
+Emma is already added to department.
+Grace is already added to department.
+Bob is already added to department.
+Alpha is successfully created.
+Bravo is successfully created.
+Charlie is successfully created.
+Delta is successfully created.
+Echo is successfully created.
+Foxtrot is successfully created.
+Hotel is successfully created.
+Alpha is already created.
+UnknownZone is not found.
+Zoe is not added to the application.
+Frank is authorized to access Delta.
+Alice is denied access to Echo.
+Alice is denied access to Echo.
+Alice is authorized to access Alpha.
+Bob is authorized to access Bravo.
+Emma is authorized to access Charlie.
+Grace is authorized to access Delta.
+Irene is authorized to access Echo.
+Emma is denied access to Foxtrot.
+Grace is denied access to Foxtrot.
+Irene is denied access to Foxtrot.
+Bob is denied access to Foxtrot.
+Security Report:
+-Foxtrot (Access level required: 6)
+-Echo (Access level required: 5)
+--Employee: Irene, Department: ITDepartment, Security ID: 110
+-Delta (Access level required: 4)
+--Employee: Frank, Department: FinanceDepartment, Security ID: 107
+--Employee: Grace, Department: ITDepartment, Security ID: 108
+-Charlie (Access level required: 3)
+--Employee: Emma, Department: ITDepartment, Security ID: 106
+-Bravo (Access level required: 2)
+--Employee: Bob, Department: ITDepartment, Security ID: 234
+-Alpha (Access level required: 1)
+--Employee: Alice, Department: HRDepartment, Security ID: 123
+-Hotel (Access level required: 0)
